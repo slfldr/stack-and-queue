@@ -1,4 +1,4 @@
-name: STACK_QUEUE
+name: STACK_AND_QUEUE
 
 on: [push, pull_request]
 
