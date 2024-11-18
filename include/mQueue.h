@@ -9,6 +9,7 @@ template<typename T> class mQueue: private sqVector<T>
     using sqVector<T>::size;
     using sqVector<T>::capacity;
     using sqVector<T>::data;
+    using sqVector<T>::resize;
 
     std::size_t front, back;
 public:
@@ -18,7 +19,6 @@ public:
     using sqVector<T>::isEmpty;
     using sqVector<T>::size_;
     using sqVector<T>::capacity_;
-    using sqVector<T>::resize;
 
     void push(T elem)
     {
