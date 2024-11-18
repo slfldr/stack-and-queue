@@ -94,7 +94,7 @@ public:
         return *this;
     }
     
-    sqVector& operator=(const sqVector&& v) noexcept
+    sqVector& operator=(sqVector&& v) noexcept
     {
         delete[] data;
 
@@ -200,7 +200,14 @@ public:
     }
     void pop_back()
     {
-        erase(size);
+        if (size != 0)
+        {
+            size--;
+        }
+        else
+        {
+            throw std::logic_error("Vector is empty");
+        }
     }
     void pop_front()
     {
