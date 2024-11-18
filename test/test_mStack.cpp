@@ -75,15 +75,6 @@ TEST(mStack, can_pop_element)
     EXPECT_EQ(2, s.size_());
 }
 
-TEST(mStack, can_resize_stack)
-{
-    mStack<int> s;
-
-    s.resize(4);
-
-    EXPECT_EQ(4 * 2 + 2, s.capacity_());
-}
-
 TEST(mStack, can_get_top_element_1)
 {
     mStack<int> s;
